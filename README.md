@@ -85,4 +85,4 @@ analytics.
 
 ## Contact
 - GitHub: https://github.com/imnishupandit
-- LinkedIn: (add your LinkedIn profile link)
+- LinkedIn: https://www.linkedin.com/in/nishu-pandit080504/
