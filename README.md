@@ -8,7 +8,7 @@ The website is built using simple HTML and CSS and is hosted using
 GitHub Pages.
 
 🌐 Live Portfolio:  
-https://imnishupandit.github.io
+https://imnishupandit.github.io/imnishupandit-portfolio/
 
 ---
 
