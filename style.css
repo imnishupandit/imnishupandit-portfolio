@@ -89,3 +89,53 @@ hr {
   height: 1px;
   background: #e5e7eb;
 }
+/* HOME / HERO SECTION */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  background: linear-gradient(135deg, #f9fafb, #eef2ff);
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  font-size: 19px;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.hero-links {
+  margin-top: 30px;
+}
+
+.hero-links a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 26px;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-links a:hover {
+  background: #1d4ed8;
+}
+
