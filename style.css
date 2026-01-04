@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header, section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.links a {
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #0057ff;
+  font-weight: bold;
+}
+
+.project ul {
+  margin-left: 20px;
+}
+
+.project img {
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+
+.repo-link {
+  margin-top: 20px;
+  font-weight: bold;
+}
