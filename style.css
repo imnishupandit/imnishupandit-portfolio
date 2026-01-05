@@ -194,30 +194,32 @@ hr {
 ========================================================= */
 
 /* ---------- Apple-style bullet points ---------- */
+
+/* List container */
 .project ul {
   list-style: none;
-  padding-left: 0;
+  max-width: 560px;
   margin: 24px auto 36px;
-  max-width: 520px;
-  text-align: left;
+  padding-left: 0;
 }
 
+/* Each list item */
 .project ul li {
-  position: relative;
-  padding-left: 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
   margin-bottom: 12px;
   font-size: 16px;
   color: var(--text-muted);
 }
 
+/* Apple-style dot */
 .project ul li::before {
   content: "•";
-  position: absolute;
-  left: 0;
-  top: 0;
   color: var(--accent);
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1;
+  margin-top: -1px;
 }
 
 /* ---------- Section headings stay centered ---------- */
