@@ -188,3 +188,68 @@ hr {
   max-width: 900px;
   margin: 120px auto;
 }
+
+/* =========================================================
+   APPLE-STYLE DETAILS POLISH (FINAL)
+========================================================= */
+
+/* ---------- Apple-style bullet points ---------- */
+.project ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 24px auto 36px;
+  max-width: 520px;
+  text-align: left;
+}
+
+.project ul li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.project ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* ---------- Section headings stay centered ---------- */
+.project h3 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* ---------- Key Insight soft highlight card ---------- */
+.key-insight {
+  max-width: 720px;
+  margin: 40px auto 10px;
+  padding: 22px 28px;
+  background: #f5f5f7;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.key-insight strong {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+/* ---------- Subtle divider between projects ---------- */
+.project-divider {
+  width: 120px;
+  height: 1px;
+  background: rgba(0,0,0,0.12);
+  margin: 110px auto;
+}
