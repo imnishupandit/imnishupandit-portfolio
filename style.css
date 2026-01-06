@@ -181,3 +181,6 @@ p {
 .container {
   padding: 50px 40px;
 }
+.card .btn {
+  margin-top: 18px;
+}
