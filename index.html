@@ -4,59 +4,94 @@
   <meta charset="UTF-8" />
   <title>Nishu Pandit | Data Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <!-- HERO -->
-<section class="hero">
-  <div class="page-card">
+<!-- ===============================
+     NAVBAR
+     =============================== -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="nav-logo">Nishu Pandit</div>
 
-    <img src="./assets/profile.jpg" class="profile-pic">
-
-    <h1>Nishu Pandit</h1>
-    <h2>Data Analyst</h2>
-
-    <p>
-      Turning data into calm, confident business decisions.
-    </p>
-
-    <div class="hero-links">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="skills.html">Skills</a>
       <a href="contact.html">Contact</a>
+      <a href="assets/Nishu_Pandit_Resume.pdf"
+         class="btn btn-primary"
+         download>
+        Resume
+      </a>
     </div>
+  </div>
+</nav>
 
-    </div>
+<!-- ===============================
+     HERO SECTION
+     =============================== -->
+<section class="container text-center">
+  <h1>Data Analyst</h1>
+
+  <p class="mt-40">
+    Turning data into calm, confident business decisions.
+  </p>
 </section>
 
+<!-- ===============================
+     FEATURED PROJECTS
+     =============================== -->
+<section class="container">
 
-  <!-- FEATURED PROJECTS -->
-  <section class="featured">
-    <h2>Featured Projects</h2>
+  <h2 class="text-center">Featured Projects</h2>
 
-    <div class="featured-grid">
+  <div
+    class="mt-40"
+    style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 28px;
+    "
+  >
 
-      <div class="featured-card">
-        <h3>Indian E-Commerce Sales Analysis</h3>
-        <p>
-          End-to-end analysis of Indian e-commerce sales data including
-          trend analysis, forecasting, and an interactive Power BI dashboard.
-        </p>
-        <a href="projects.html">View Project →</a>
-      </div>
+    <!-- Project 1 -->
+    <div class="card">
+      <h3>Indian E-Commerce Sales Analysis & Forecasting</h3>
 
-      <div class="featured-card">
-        <h3>HR Analytics — Employee Attrition</h3>
-        <p>
-          HR analytics project focused on employee attrition patterns,
-          using cleaned HR data and an interactive Power BI dashboard.
-        </p>
-        <a href="projects.html">View Project →</a>
-      </div>
+      <p>
+        End-to-end analysis of Indian e-commerce sales data,
+        covering trend analysis, festive season impact,
+        category and city-level performance, and
+        ARIMA-based sales forecasting.
+      </p>
 
+      <a href="projects.html" class="btn mt-40">
+        View Project →
+      </a>
     </div>
-  </section>
+
+    <!-- Project 2 -->
+    <div class="card">
+      <h3>HR Analytics — Employee Attrition Analysis</h3>
+
+      <p>
+        Business-focused HR analytics project analyzing
+        employee attrition patterns across departments,
+        salary bands, and career stages using an
+        interactive Power BI dashboard.
+      </p>
+
+      <a href="projects.html" class="btn mt-40">
+        View Project →
+      </a>
+    </div>
+
+  </div>
+
+</section>
 
 </body>
 </html>
