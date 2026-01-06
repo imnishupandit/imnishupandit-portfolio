@@ -435,10 +435,19 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 14px;
+
+  padding: 26px 20px;
+  border-radius: 999px; /* 👈 fully rounded like resume */
+
   text-decoration: none;
   color: var(--text-main);
-  padding: 28px 10px;
-  transition: all 0.3s ease;
+  background: #f2f3f7;
+
+  box-shadow:
+    12px 12px 30px #d1d3d8,
+   -12px -12px 30px #ffffff;
+
+  transition: all 0.25s ease;
 }
 
 .contact-card img {
@@ -446,9 +455,15 @@ body {
   height: 44px;
 }
 
+.contact-card span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .contact-card:hover {
   box-shadow:
-    inset 8px 8px 18px #d1d3d8,
-    inset -8px -8px 18px #ffffff;
+    inset 6px 6px 14px #d1d3d8,
+    inset -6px -6px 14px #ffffff;
 }
+
 
