@@ -465,3 +465,58 @@ p {
 
 @media (max-width: 900px) { 2 columns }
 @media (max-width: 600px) { 1 column }
+
+/* ===============================
+   NAVBAR ACTIVE LINK
+   =============================== */
+
+.nav-links a.active {
+  color: var(--text-main);
+  position: relative;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-blue);
+  border-radius: 2px;
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+
+.site-footer {
+  margin-top: 120px;
+  padding: 40px 20px;
+  border-top: 1px solid var(--border-soft);
+  text-align: center;
+}
+
+.site-footer p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--text-main);
+}
+
+
