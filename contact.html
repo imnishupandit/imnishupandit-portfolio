@@ -8,35 +8,81 @@
 </head>
 <body>
 
-<section class="soft-wrapper contact-page">
-
+<!-- ===============================
+     CONTACT HERO
+     =============================== -->
+<section class="container text-center contact-hero">
   <h1>Contact</h1>
-
-  <p class="contact-line">
-    Open to opportunities, collaborations, and conversations.
+  <p>
+    Open to opportunities, collaborations,
+    and meaningful conversations.
   </p>
+</section>
 
-  <!-- CONTACT ROW -->
-  <div class="contact-row">
+<!-- ===============================
+     CONTACT OPTIONS
+     =============================== -->
+<section class="container">
 
-    <a href="mailto:nishusharmabk2@gmail.com" class="contact-pill soft-card">
-      <img src="https://img.icons8.com/fluency/48/gmail-new.png">
+  <div class="contact-grid reveal">
+
+    <!-- Email -->
+    <a href="mailto:nishusharmabk2@gmail.com" class="card contact-card">
+      <img src="https://img.icons8.com/fluency/48/gmail-new.png"
+           alt="Email" class="contact-icon">
       <span>Email</span>
+      <p>nishusharmabk2@gmail.com</p>
     </a>
 
-    <a href="https://github.com/imnishupandit" target="_blank" class="contact-pill soft-card">
-      <img src="https://img.icons8.com/fluency/48/github.png">
+    <!-- GitHub -->
+    <a href="https://github.com/imnishupandit"
+       target="_blank"
+       class="card contact-card">
+      <img src="https://img.icons8.com/fluency/48/github.png"
+           alt="GitHub" class="contact-icon">
       <span>GitHub</span>
+      <p>github.com/imnishupandit</p>
     </a>
 
-    <a href="https://linkedin.com/in/nishu-pandit080504/" target="_blank" class="contact-pill soft-card">
-      <img src="https://img.icons8.com/fluency/48/linkedin.png">
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/nishu-pandit080504/"
+       target="_blank"
+       class="card contact-card">
+      <img src="https://img.icons8.com/fluency/48/linkedin.png"
+           alt="LinkedIn" class="contact-icon">
       <span>LinkedIn</span>
+      <p>linkedin.com/in/nishu-pandit080504</p>
     </a>
 
   </div>
 
 </section>
+
+<!-- ===============================
+     RESUME CTA
+     =============================== -->
+<section class="container text-center">
+  <a href="./assets/Nishu_Pandit_Resume.pdf"
+     class="btn btn-primary"
+     download>
+    Download Resume →
+  </a>
+</section>
+
+<!-- Scroll reveal JS -->
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  reveals.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
