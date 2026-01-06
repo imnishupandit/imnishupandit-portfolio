@@ -319,12 +319,13 @@ p {
   font-size: 1rem;
 }
 
-/* Skills grid */
+/* Skills grid – fixed 3 per row */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
+
 
 /* Skill card */
 .skill-card {
@@ -347,6 +348,20 @@ p {
 @media (max-width: 600px) {
   .skills-grid {
     gap: 18px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
 
