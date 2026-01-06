@@ -304,10 +304,6 @@ p {
     width: fit-content;
   }
 }
-/* FORCE spacing for repository buttons */
-.project-cinematic .project-text a.btn {
-  margin-top: 28px !important;
-}
 
 /* ===============================
    SKILLS PAGE
