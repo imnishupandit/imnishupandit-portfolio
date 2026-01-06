@@ -391,3 +391,62 @@ p {
   font-size: 0.88rem;
   line-height: 1.4;
 }
+
+/* ===============================
+   CONTACT PAGE
+   =============================== */
+
+.contact-hero p {
+  max-width: 520px;
+  margin: 18px auto 0;
+  font-size: 1rem;
+}
+
+/* Contact grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Contact card */
+.contact-card {
+  text-align: left;
+  padding: 22px;
+}
+
+.contact-icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 12px;
+}
+
+.contact-card span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.contact-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Hover feel */
+.contact-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
