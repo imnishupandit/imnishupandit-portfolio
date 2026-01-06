@@ -403,16 +403,28 @@ p {
 }
 
 /* Contact grid */
+/* Center contact grid properly */
 .contact-grid {
+  max-width: 900px;      /* grid ko limit karo */
+  margin: 0 auto;        /* center align */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
+
 /* Contact card */
 .contact-card {
   text-align: left;
   padding: 22px;
+}
+
+.contact-card {
+  align-items: flex-start;
+}
+
+.contact-card {
+  min-height: 160px;
 }
 
 .contact-icon {
@@ -450,3 +462,6 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 900px) { 2 columns }
+@media (max-width: 600px) { 1 column }
