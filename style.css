@@ -26,6 +26,18 @@
   --shadow-hover: 0 22px 60px rgba(0,0,0,0.12);
 }
 
+/* ================= PAGE CARD (HOME / SKILLS / CONTACT) ================= */
+
+.page-card {
+  background: var(--bg-card);
+  padding: 60px 80px;
+  border-radius: 32px;
+  border: 1px solid var(--border-light);
+
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+
 /* =====================================================
    BODY + TYPOGRAPHY (APPLE FEEL)
 ===================================================== */
