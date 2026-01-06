@@ -486,18 +486,3 @@ p {
   border-radius: 2px;
 }
 
-/* ===== Home – Featured Projects Grid ===== */
-.featured-grid {
-  max-width: 1100px;
-  margin: 40px auto 0;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 26px;
-}
-
-@media (max-width: 700px) {
-  .featured-grid {
-    grid-template-columns: 1fr;
-  }
-}
