@@ -206,7 +206,7 @@ p {
 /* Cinematic section */
 .project-cinematic {
   max-width: 1100px;
-  margin: 120px auto;
+  margin: 70px auto;
   padding: 0 40px;
 
   display: grid;
@@ -303,4 +303,11 @@ p {
     margin-top: 20px;
     width: fit-content;
   }
+}
+/* Push repository button slightly down */
+.project-text .btn {
+  margin-top: 18px;
+}
+.project-text {
+  max-width: 520px;
 }
