@@ -304,13 +304,11 @@ p {
     width: fit-content;
   }
 }
-/* Push repository button slightly down */
-.project-text .btn {
-  margin-top: 24px;
+/* FORCE spacing for repository buttons */
+.project-cinematic .project-text a.btn {
+  margin-top: 28px !important;
 }
-.project-text {
-  max-width: 520px;
-}
+
 /* ===============================
    SKILLS PAGE
    =============================== */
