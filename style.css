@@ -505,12 +505,6 @@ p {
   line-height: 1.4;
 }
 
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-}
-
 .footer-links a {
   font-size: 0.72rem;
   color: var(--text-muted);
