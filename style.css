@@ -537,10 +537,14 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* ===============================
-   FEATURED PROJECTS – HOME PAGE
-   =============================== */
 
+/* ===== Force spacing before repository button ===== */
+.project-cinematic .project-text > a.btn {
+  display: inline-block;
+  margin-top: 32px;   /* clean gap */
+}
+
+/* ===== Home – Featured Projects Grid ===== */
 .featured-grid {
   max-width: 1100px;
   margin: 40px auto 0;
@@ -550,7 +554,6 @@ body {
   gap: 28px;
 }
 
-/* Mobile */
 @media (max-width: 700px) {
   .featured-grid {
     grid-template-columns: 1fr;
