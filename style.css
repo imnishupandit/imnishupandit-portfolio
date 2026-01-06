@@ -305,6 +305,16 @@ p {
   }
 }
 
+.project-text .btn {
+  display: inline-block;
+  margin-top: 28px;
+}
+
+.project-text .btn {
+  display: inline-block;
+  margin-top: 32px;
+}
+
 /* ===============================
    SKILLS PAGE
    =============================== */
