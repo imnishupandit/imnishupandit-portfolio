@@ -24,8 +24,8 @@
 /* Body */
 body {
   font-family: -apple-system, BlinkMacSystemFont,
-               "SF Pro Display", "SF Pro Text",
-               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    "SF Pro Display", "SF Pro Text",
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
   background-color: var(--bg-main);
   color: var(--text-main);
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Paragraph */
 p {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--text-muted);
 }
 
@@ -77,7 +77,7 @@ p {
 
 .nav-links {
   display: flex;
-  gap: 28px;
+  gap: 26px;
 }
 
 .nav-links a {
@@ -92,13 +92,13 @@ p {
 }
 
 /* ===============================
-   BUTTONS (Apple press feel)
+   BUTTONS
    =============================== */
 
 .btn {
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 10px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   border: 1px solid var(--border-soft);
   background-color: var(--bg-surface);
@@ -128,8 +128,6 @@ p {
   background-color: #0063c6;
 }
 
-}
-
 /* ===============================
    CONTAINER
    =============================== */
@@ -137,32 +135,48 @@ p {
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 60px 40px;
+  padding: 50px 40px;
 }
 
 /* ===============================
-   CARD – APPLE HOVER LIFT EFFECT
+   HERO
+   =============================== */
+
+.hero {
+  padding: 70px 20px 30px;
+}
+
+/* ===============================
+   CARD – COMPACT APPLE STYLE
    =============================== */
 
 .card {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-soft);
   border-radius: 16px;
-  padding: 24px;
 
-  /* 🔑 MAGIC PART */
+  /* 🔽 SIZE CONTROL */
+  padding: 20px 22px;
+  max-width: 520px;
+
   transition:
     transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 0.35s ease;
 }
 
-/* Hover → smoothly goes UP */
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  transform: translateY(-6px);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.55);
 }
 
-/* Cursor hatate hi → smoothly DOWN (default state) */
+.card p {
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.card .btn {
+  margin-top: 6px;
+}
 
 /* ===============================
    UTILITIES
@@ -173,23 +187,5 @@ p {
 }
 
 .mt-40 {
-  margin-top: 40px;
-}
-
-/* Hero spacing fix */
-.hero {
-  padding: 80px 20px 40px;
-}
-.container {
-  padding: 50px 40px;
-}
-.card .btn {
-  margin-top: 18px;
-}
-.card p {
-  margin-bottom: 20px;
-}
-
-.card .btn {
-  margin-top: 8px;
+  margin-top: 32px;
 }
