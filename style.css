@@ -487,37 +487,40 @@ p {
 }
 
 /* ===============================
-   FOOTER (FINAL POLISH)
+   FOOTER – SLIM VERSION
    =============================== */
 
 .site-footer {
-  margin-top: auto;                 /* 🔑 pushes footer to bottom */
-  padding: 22px 16px;               /* slimmer */
+  margin-top: auto;                 /* bottom stick */
+  padding: 14px 16px;               /* 🔽 height kam */
   border-top: 1px solid var(--border-soft);
   text-align: center;
 }
 
 .site-footer p {
-  font-size: 0.75rem;
+  font-size: 0.72rem;               /* thoda chhota */
   color: var(--text-muted);
-  margin-bottom: 10px;
+  margin-bottom: 6px;               /* 🔽 gap kam */
+  line-height: 1.4;
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 14px;                        /* 🔽 tighter */
 }
 
 .footer-links a {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
+  line-height: 1.4;
   transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
   color: var(--text-main);
 }
+
 
 body {
   font-family: -apple-system, BlinkMacSystemFont,
@@ -533,4 +536,23 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+/* ===============================
+   FEATURED PROJECTS – HOME PAGE
+   =============================== */
+
+.featured-grid {
+  max-width: 1100px;
+  margin: 40px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
 }
