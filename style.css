@@ -382,3 +382,22 @@ body {
     inset -6px -6px 14px #ffffff;
 }
 
+/* ================= SKILL CARDS WITH LOGOS ================= */
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  font-weight: 500;
+}
+
+.skill-card img {
+  width: 42px;
+  height: 42px;
+}
+
+.skill-card span {
+  font-size: 15px;
+  color: var(--text-main);
+}
