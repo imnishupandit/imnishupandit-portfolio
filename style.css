@@ -306,7 +306,7 @@ p {
 }
 /* Push repository button slightly down */
 .project-text .btn {
-  margin-top: 18px;
+  margin-top: 24px;
 }
 .project-text {
   max-width: 520px;
