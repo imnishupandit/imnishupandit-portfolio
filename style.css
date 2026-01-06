@@ -487,33 +487,33 @@ p {
 }
 
 /* ===============================
-   FOOTER – SLIM VERSION
+    FOOTER FIXED
    =============================== */
 
+
 .site-footer {
-  margin-top: auto;                 /* bottom stick */
-  padding: 14px 16px;               /* 🔽 height kam */
+  margin-top: auto;              /* 🔑 sticky magic */
+  padding: 14px 16px;            /* slim height */
   border-top: 1px solid var(--border-soft);
   text-align: center;
 }
 
 .site-footer p {
-  font-size: 0.72rem;               /* thoda chhota */
+  font-size: 0.72rem;
   color: var(--text-muted);
-  margin-bottom: 6px;               /* 🔽 gap kam */
+  margin-bottom: 6px;
   line-height: 1.4;
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 14px;                        /* 🔽 tighter */
+  gap: 14px;
 }
 
 .footer-links a {
   font-size: 0.72rem;
   color: var(--text-muted);
-  line-height: 1.4;
   transition: color 0.2s ease;
 }
 
@@ -521,23 +521,6 @@ p {
   color: var(--text-main);
 }
 
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont,
-    "SF Pro Display", "SF Pro Text",
-    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-
-  background-color: var(--bg-main);
-  color: var(--text-main);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-
-  
-/* ===== Force spacing before repository button ===== */
-.project-cinematic .project-text > a.btn {
-  display: inline-block;
-  margin-top: 32px;   /* clean gap */
-}
 
 /* ===== Home – Featured Projects Grid ===== */
 .featured-grid {
