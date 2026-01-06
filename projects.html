@@ -3,138 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <title>Projects | Nishu Pandit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
 
-  <!-- PAGE INTRO -->
-  <section class="project">
-    <h1>Projects</h1>
+<!-- ===============================
+     PROJECTS INTRO
+     =============================== -->
+<section class="container text-center project-hero">
+  <h1>Projects</h1>
+  <p>
+    Selected work focused on real-world business problems,
+    thoughtful analysis, and calm data storytelling.
+  </p>
+</section>
+
+<!-- ===============================
+     PROJECT 1
+     =============================== -->
+<section class="project-cinematic" id="ecommerce-project">
+
+  <div class="project-text">
+    <h2>Indian E-Commerce Sales Analysis & Forecasting</h2>
+
+    <p class="project-lead">
+      An end-to-end analysis of Indian e-commerce sales data,
+      uncovering trends, seasonal behavior, and future growth
+      using time-series forecasting.
+    </p>
+
+    <h3>Tools</h3>
+    <p>Python · Excel · R (ARIMA) · Power BI</p>
+
+    <h3>Key Insight</h3>
     <p>
-      A collection of data analytics projects focused on real-world business
-      problems, data cleaning, and interactive dashboards.
+      Sales peak sharply during festive seasons, with Electronics
+      emerging as the most consistent revenue driver.
     </p>
-  </section>
 
-  <!-- ================================= -->
-  <!-- PROJECT 1 : E-COMMERCE -->
-  <!-- ================================= -->
-  <section class="project" id="ecommerce-project">
+    <a href="https://github.com/imnishupandit/indian-ecommerce-sales-analysis"
+       target="_blank"
+       class="btn btn-primary">
+      View Repository →
+    </a>
+  </div>
 
-    <h2>Indian E-Commerce Sales Analysis & Forecasting (2021–2025)</h2>
+  <div class="project-visual">
+    <img src="./assets/dashboard.jpg" alt="E-Commerce Sales Dashboard">
+  </div>
 
+</section>
+
+<!-- ===============================
+     PROJECT 2
+     =============================== -->
+<section class="project-cinematic" id="hr-project">
+
+  <div class="project-text">
+    <h2>HR Analytics — Employee Attrition Analysis</h2>
+
+    <p class="project-lead">
+      A business-focused HR analytics project exploring
+      why employees leave, where attrition is highest,
+      and how organizations can act early.
+    </p>
+
+    <h3>Tools</h3>
+    <p>Excel · Power BI</p>
+
+    <h3>Key Insight</h3>
     <p>
-      This project focuses on analyzing Indian e-commerce sales data to
-      understand sales trends, festive impact, category and city-wise
-      performance, and future sales forecasting using historical data.
+      Attrition is highest among early-career employees
+      in lower salary bands, particularly in R&D and Sales.
     </p>
 
-    <h3>Tools Used</h3>
-    <ul>
-      <li>Python — Data cleaning & preprocessing</li>
-      <li>Excel — Exploratory Data Analysis</li>
-      <li>R — ARIMA time-series forecasting</li>
-      <li>Power BI — Interactive dashboard</li>
-    </ul>
+    <a href="https://github.com/imnishupandit/hr-analytics-attrition-dashboard"
+       target="_blank"
+       class="btn btn-primary">
+      View Repository →
+    </a>
+  </div>
 
-    <h3>My Contribution</h3>
-    <ul>
-      <li>Collected and structured historical Indian e-commerce sales data</li>
-      <li>Cleaned and preprocessed raw data using Python</li>
-      <li>Performed exploratory data analysis to identify trends and seasonality</li>
-      <li>Built time-series forecasting models using ARIMA</li>
-      <li>Designed and developed an interactive Power BI dashboard</li>
-      <li>Translated analytical results into actionable business insights</li>
-    </ul>
+  <div class="project-visual">
+    <img src="./assets/hr-dashboard.jpg" alt="HR Analytics Dashboard">
+  </div>
 
-    <div class="dashboard-frame">
-      <img src="./assets/dashboard.jpg" alt="E-Commerce Sales Dashboard">
-    </div>
-
-    <div class="project-story">
-      <h3>Business Question</h3>
-      <p>
-        How do sales trends, categories, cities, and festive seasons impact
-        Indian e-commerce performance, and what growth can be expected next?
-      </p>
-
-      <h3>Why This Analysis Matters</h3>
-      <p>
-        Helps decision-makers plan inventory, optimize festive campaigns,
-        and prioritize high-performing categories and cities.
-      </p>
-
-      <div class="key-insight">
-        <strong>Key Insight</strong><br>
-        Indian e-commerce sales peak sharply during festive periods,
-        with Electronics emerging as the most consistently high-performing
-        category, while forecasts indicate steady growth.
-      </div>
-    </div>
-
-    <p class="repo-link">
-      🔗 Project Repository:
-      <a href="https://github.com/imnishupandit/indian-ecommerce-sales-analysis" target="_blank">
-        View on GitHub
-      </a>
-    </p>
-
-  </section>
-
-  <hr class="project-divider">
-
-  <!-- ================================= -->
-  <!-- PROJECT 2 : HR ANALYTICS -->
-  <!-- ================================= -->
-  <section class="project" id="hr-project">
-
-    <h2>HR Analytics Dashboard — Employee Attrition Analysis</h2>
-
-    <p>
-      This project analyzes employee attrition patterns using HR data
-      and presents insights through an interactive Power BI dashboard.
-    </p>
-
-    <h3>Tools Used</h3>
-    <ul>
-      <li>Excel — Data cleaning & preprocessing</li>
-      <li>Power BI — Interactive dashboard</li>
-    </ul>
-
-    <h3>My Contribution</h3>
-    <ul>
-      <li>Cleaned and prepared HR data using Excel</li>
-      <li>Handled missing values and inconsistent records</li>
-      <li>Created analysis-ready datasets</li>
-      <li>Built an interactive Power BI dashboard</li>
-    </ul>
-
-    <div class="dashboard-frame">
-      <img src="./assets/hr-dashboard.jpg" alt="HR Analytics Dashboard">
-    </div>
-
-    <div class="project-story">
-      <h3>Business Question</h3>
-      <p>
-        What factors contribute most to employee attrition,
-        and where should retention efforts be focused?
-      </p>
-
-      <div class="key-insight">
-        <strong>Key Insight</strong><br>
-        Attrition is highest among early-career employees in lower salary bands,
-        especially in R&D and Sales roles.
-      </div>
-    </div>
-
-    <p class="repo-link">
-      🔗 Project Repository:
-      <a href="https://github.com/imnishupandit/hr-analytics-attrition-dashboard" target="_blank">
-        View on GitHub
-      </a>
-    </p>
-
-  </section>
+</section>
 
 </body>
 </html>
