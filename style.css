@@ -7,11 +7,11 @@
 
 /* ================= ROOT THEME ================= */
 :root {
-  --bg-main: #f5f5f7;              /* Apple off-white */
-  --bg-card: #ffffff;              /* Card white */
-  --text-main: #1d1d1f;            /* Apple dark text */
-  --text-muted: #6e6e73;            /* Secondary text */
-  --accent: #0071e3;                /* Apple blue */
+  --bg-main: #f7f7f9;          /* slightly whiter than before */
+  --bg-card: #ffffff;
+  --text-main: #1d1d1f;
+  --text-muted: #5f5f64;       /* darker than before for readability */
+  --accent: #0071e3;
   --accent-hover: #005bb5;
   --border-light: rgba(0,0,0,0.08);
   --shadow-soft: 0 10px 30px rgba(0,0,0,0.08);
@@ -20,9 +20,7 @@
 
 /* ================= BODY ================= */
 body {
-  margin: 0;
-  background: #f2f3f7;
-
+  background: var(--bg-main);
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -31,23 +29,26 @@ body {
     "Helvetica Neue",
     Helvetica,
     Arial,
-    sans-serif; 
-  color: #1d1d1f;
+    sans-serif;
+  color: var(--text-main);
 }
 
+/* ================= TYPOGRAPHY ================= */
 h1, h2, h3 {
   font-weight: 600;
   letter-spacing: -0.4px;
 }
-p, span {
+
+p, span, li {
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.65;
+  color: var(--text-muted);
 }
+
 a, button {
   font-family: inherit;
   font-weight: 500;
 }
-
 
 /* ================= HERO ================= */
 .hero {
@@ -61,31 +62,20 @@ a, button {
 }
 
 .hero h1 {
-  font-size: 58px;
-  font-weight: 600;
+  font-size: 56px;
   margin-bottom: 8px;
 }
 
 .hero h2 {
   font-size: 22px;
   font-weight: 500;
+  margin-bottom: 22px;
   color: var(--text-muted);
-  margin-bottom: 24px;
 }
 
 .hero p {
-  max-width: 760px;
-  font-size: 19px;
-  color: var(--text-muted);
-}
-
-.hero-full h1 {
-  font-size: 56px;
-}
-
-.hero-full p {
   max-width: 720px;
-  margin-top: 16px;
+  font-size: 18px;
 }
 
 /* ================= BUTTONS ================= */
@@ -99,85 +89,26 @@ a, button {
   padding: 14px 32px;
   border-radius: 999px;
   background: var(--accent);
-  color: #ffffff;
-  font-weight: 500;
+  color: #fff;
   text-decoration: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
   box-shadow: var(--shadow-soft);
+  transition: all 0.25s ease;
 }
 
 .hero-links a:hover {
+  background: var(--accent-hover);
   transform: translateY(-3px);
   box-shadow: var(--shadow-hover);
-  background: var(--accent-hover);
 }
 
-/* ================= SECTION HEADINGS ================= */
-h2 {
-  font-size: 36px;
-  font-weight: 600;
-}
-
-/* ================= FEATURED PROJECTS ================= */
-.featured {
-  max-width: 1200px;
-  margin: 120px auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.featured-grid {
-  margin-top: 60px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
-}
-
-/* ================= FLOATING CARDS ================= */
-.featured-card,
-.project {
-  background: var(--bg-card);
-  padding: 38px;
-  border-radius: 22px;
-  border: 1px solid var(--border-light);
-  box-shadow: var(--shadow-soft);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.featured-card:hover,
-.project:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-hover);
-}
-
-.featured-card h3,
-.project h2 {
-  font-size: 24px;
-  margin-bottom: 16px;
-}
-
-.featured-card p,
-.project p {
-  font-size: 17px;
-  color: var(--text-muted);
-}
-
-.featured-card a {
-  display: inline-block;
-  margin-top: 20px;
-  color: var(--accent);
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.featured-card a:hover {
-  text-decoration: underline;
-}
-
-/* ================= PROJECT PAGE ================= */
+/* ================= PROJECT / CONTENT CARDS ================= */
 .project {
   max-width: 1000px;
   margin: 120px auto;
+  padding: 60px;
+  background: var(--bg-card);
+  border-radius: 26px;
+  box-shadow: var(--shadow-soft);
   text-align: center;
 }
 
@@ -186,22 +117,35 @@ h2 {
   margin: 0 auto 24px;
 }
 
+/* ================= LISTS ================= */
 .project ul {
-  list-style-position: inside;
+  list-style: none;
+  max-width: 560px;
   margin: 24px auto 36px;
-  max-width: 520px;
   text-align: left;
-  color: var(--text-muted);
+}
+
+.project ul li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.project ul li::before {
+  content: "•";
+  color: var(--accent);
+  font-size: 22px;
+  line-height: 1;
 }
 
 /* ================= DASHBOARD FRAME ================= */
 .dashboard-frame {
-  max-width: 760px;          
+  max-width: 760px;
   margin: 60px auto 0;
   padding: 20px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 28px;
-  border: 1px solid rgba(0,0,0,0.06);
   box-shadow: 0 14px 40px rgba(0,0,0,0.08);
 }
 
@@ -211,308 +155,102 @@ h2 {
   display: block;
 }
 
-/* ================= DIVIDER ================= */
-hr {
-  border: none;
-  height: 1px;
-  background: rgba(0,0,0,0.08);
-  max-width: 900px;
-  margin: 120px auto;
+/* ================= PROJECT STORY ================= */
+.project-story {
+  max-width: 760px;
+  margin: 60px auto 0;
+  padding: 40px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: var(--shadow-soft);
 }
 
-/* =========================================================
-   APPLE-STYLE DETAILS POLISH (FINAL)
-========================================================= */
-
-/* ---------- Apple-style bullet points ---------- */
-
-/* List container */
-.project ul {
-  list-style: none;
-  max-width: 560px;
-  margin: 24px auto 36px;
-  padding-left: 0;
-}
-
-/* Each list item */
-.project ul li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 12px;
-  font-size: 16px;
-  color: var(--text-muted);
-}
-
-/* Apple-style dot */
-.project ul li::before {
-  content: "•";
-  color: var(--accent);
-  font-size: 22px;
-  line-height: 1;
-  margin-top: -1px;
-}
-
-/* ---------- Section headings stay centered ---------- */
-.project h3 {
+.project-story h3 {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin: 32px 0 14px;
 }
 
-/* ---------- Key Insight soft highlight card ---------- */
+.project-story p {
+  text-align: center;
+}
+
+/* ================= KEY INSIGHT ================= */
 .key-insight {
   max-width: 720px;
-  margin: 40px auto 10px;
-  padding: 22px 28px;
-  background: #f5f5f7;
-  border-radius: 16px;
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  margin: 40px auto;
+  padding: 26px 30px;
+  background: #f7f7f9;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
   text-align: center;
 }
 
 .key-insight strong {
   display: block;
   margin-bottom: 10px;
-  font-weight: 600;
   color: var(--text-main);
 }
 
-/* ---------- Subtle divider between projects ---------- */
-.project-divider {
-  width: 120px;
-  height: 1px;
-  background: rgba(0,0,0,0.12);
-  margin: 110px auto;
-}
-/* ================= PROJECT STORY BLOCK ================= */
-
-.project-story {
-  max-width: 760px;
-  margin: 60px auto 0;
-  padding: 34px;
-  background: #ffffff;
-  border-radius: 22px;
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
-}
-
-.project-story h3 {
-  margin-top: 28px;
-  margin-bottom: 12px;
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.project-story p {
-  text-align: center;
-  color: var(--text-muted);
-  font-size: 16px;
-}
-
-.project-story ul {
-  list-style: none;
-  margin-top: 16px;
-  padding-left: 0;
-}
-
-.project-story ul li {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-  font-size: 15px;
-  color: var(--text-muted);
-}
-
-.project-story ul li::before {
-  content: "•";
-  color: var(--accent);
-  font-size: 22px;
-  line-height: 1;
-}
-
-/* ================= SOFT UI / NEUMORPHISM ================= */
-
-body {
-  background: #f2f3f7;
-}
-
-/* main soft container */
+/* ================= SOFT WRAPPER (INNER PAGES) ================= */
 .soft-wrapper {
   max-width: 1200px;
   margin: 80px auto;
   padding: 60px;
+  background: #fff;   /* IMPORTANT: white for clarity */
   border-radius: 28px;
-  background: #f2f3f7;
-  box-shadow:
-    20px 20px 60px #d1d3d8,
-   -20px -20px 60px #ffffff;
+  box-shadow: var(--shadow-soft);
 }
 
-/* hero alignment */
-.hero {
-  text-align: center;
-}
-
-/* round profile image */
-.profile-pic {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 24px;
-  box-shadow:
-    inset 8px 8px 16px #d1d3d8,
-    inset -8px -8px 16px #ffffff;
-}
-
-
-
-/* mobile safety */
-@media (max-width: 768px) {
-  .soft-wrapper {
-    margin: 30px 16px;
-    padding: 30px 20px;
-  }
-
-  .profile-pic {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-/* ================= SKILLS GRID ================= */
-
+/* ================= SKILLS ================= */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 30px;
+  gap: 34px;
   margin-top: 40px;
   text-align: center;
-}
-
-/* reusable soft button */
-.soft-btn {
-  display: inline-block;
-  padding: 14px 36px;
-  border-radius: 999px;
-  background: #f2f3f7;
-  color: var(--text-main);
-  text-decoration: none;
-  box-shadow:
-    10px 10px 25px #d1d3d8,
-   -10px -10px 25px #ffffff;
-  transition: all 0.25s ease;
-}
-
-.soft-btn:hover {
-  box-shadow:
-    inset 6px 6px 14px #d1d3d8,
-    inset -6px -6px 14px #ffffff;
-}
-
-/* ================= SKILL CARDS WITH LOGOS ================= */
-
-.skill-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-  font-weight: 500;
 }
 
 .skill-card img {
   width: 42px;
   height: 42px;
-  object-fit: contain;
-}
-
-.skill-card span {
-  font-size: 15px;
-  color: var(--text-main);
-}
-.skill-card {
-  padding: 24px 10px;
 }
 
 .skill-card span {
   margin-top: 6px;
   font-size: 14px;
-  color: #1d1d1f;
+  color: var(--text-main);
 }
 
-/* ================= CONTACT PAGE ================= */
-
-.contact-page {
-  text-align: center;
-}
-
-.contact-line {
-  margin-top: 10px;
-  margin-bottom: 50px;
-  color: var(--text-muted);
-}
-
+/* ================= CONTACT ================= */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
 }
 
 .contact-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-
   padding: 26px 20px;
-  border-radius: 999px; /* 👈 fully rounded like resume */
-
+  border-radius: 999px;
+  background: #fff;
   text-decoration: none;
   color: var(--text-main);
-  background: #f2f3f7;
-
-  box-shadow:
-    12px 12px 30px #d1d3d8,
-   -12px -12px 30px #ffffff;
-
+  box-shadow: var(--shadow-soft);
   transition: all 0.25s ease;
 }
 
-.contact-card img {
-  width: 44px;
-  height: 44px;
-}
-
-.contact-card span {
-  font-size: 14px;
-  font-weight: 500;
-}
-
 .contact-card:hover {
-  box-shadow:
-    inset 6px 6px 14px #d1d3d8,
-    inset -6px -6px 14px #ffffff;
+  box-shadow: inset 6px 6px 14px rgba(0,0,0,0.08);
 }
 
-/* ================= HOME HERO FIX ================= */
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .project,
+  .soft-wrapper {
+    margin: 40px 16px;
+    padding: 30px 22px;
+  }
 
-.hero-full {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 20px;
+  .hero h1 {
+    font-size: 42px;
+  }
 }
-
-/* remove boxed feel */
-.hero-full .soft-wrapper {
-  box-shadow: none;
-  padding: 0;
-  margin: 0;
-}
-
