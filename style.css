@@ -457,4 +457,29 @@ section {
   gap: 36px;
   flex-wrap: wrap;
 }
+.soft-btn,
+.contact-pill,
+.skill-card {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.soft-btn:hover,
+.contact-pill:hover,
+.skill-card:hover {
+  transform: translateY(-4px);
+}
+
+.soft-btn:active,
+.contact-pill:active,
+.skill-card:active {
+  transform: translateY(0);
+  box-shadow:
+    inset 6px 6px 14px #d1d3d8,
+    inset -6px -6px 14px #ffffff;
+}
+.resume-btn-wrap {
+  margin-top: 60px;
+  text-align: center;
+}
 
