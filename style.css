@@ -20,12 +20,34 @@
 
 /* ================= BODY ================= */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               system-ui, Helvetica, Arial, sans-serif;
-  background: var(--bg-main);
-  color: var(--text-main);
+  margin: 0;
+  background: #f2f3f7;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "SF Pro Text",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif; 
+  color: #1d1d1f;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -0.4px;
+}
+p, span {
+  font-weight: 400;
   line-height: 1.6;
 }
+a, button {
+  font-family: inherit;
+  font-weight: 500;
+}
+
 
 /* ================= HERO ================= */
 .hero {
@@ -55,6 +77,15 @@ body {
   max-width: 760px;
   font-size: 19px;
   color: var(--text-muted);
+}
+
+.hero-full h1 {
+  font-size: 56px;
+}
+
+.hero-full p {
+  max-width: 720px;
+  margin-top: 16px;
 }
 
 /* ================= BUTTONS ================= */
