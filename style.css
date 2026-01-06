@@ -532,9 +532,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 
-  /* 🔑 sticky footer magic */
-  min-height: 80vh;
-
+  
 /* ===== Force spacing before repository button ===== */
 .project-cinematic .project-text > a.btn {
   display: inline-block;
@@ -548,7 +546,7 @@ body {
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
+  gap: 26px;
 }
 
 @media (max-width: 700px) {
