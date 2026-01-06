@@ -301,3 +301,52 @@ hr {
   font-size: 22px;
   line-height: 1;
 }
+
+/* ================= SOFT UI / NEUMORPHISM ================= */
+
+body {
+  background: #f2f3f7;
+}
+
+/* main soft container */
+.soft-wrapper {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 60px;
+  border-radius: 28px;
+  background: #f2f3f7;
+  box-shadow:
+    20px 20px 60px #d1d3d8,
+   -20px -20px 60px #ffffff;
+}
+
+/* hero alignment */
+.hero {
+  text-align: center;
+}
+
+/* round profile image */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 24px;
+  box-shadow:
+    inset 8px 8px 16px #d1d3d8,
+    inset -8px -8px 16px #ffffff;
+}
+
+/* mobile safety */
+@media (max-width: 768px) {
+  .soft-wrapper {
+    margin: 30px 16px;
+    padding: 30px 20px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+}
+
