@@ -533,10 +533,7 @@ body {
   -webkit-font-smoothing: antialiased;
 
   /* 🔑 sticky footer magic */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+  min-height: 80vh;
 
 /* ===== Force spacing before repository button ===== */
 .project-cinematic .project-text > a.btn {
