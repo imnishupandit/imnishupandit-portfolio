@@ -173,3 +173,11 @@ p {
 .mt-40 {
   margin-top: 40px;
 }
+
+/* Hero spacing fix */
+.hero {
+  padding: 80px 20px 40px;
+}
+.container {
+  padding: 50px 40px;
+}
