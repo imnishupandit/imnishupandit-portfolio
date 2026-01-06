@@ -486,36 +486,6 @@ p {
   border-radius: 2px;
 }
 
-/* ===============================
-    FOOTER FIXED
-   =============================== */
-
-
-.site-footer {
-  margin-top: auto;              /* 🔑 sticky magic */
-  padding: 14px 16px;            /* slim height */
-  border-top: 1px solid var(--border-soft);
-  text-align: center;
-}
-
-.site-footer p {
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  margin-bottom: 6px;
-  line-height: 1.4;
-}
-
-.footer-links a {
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  transition: color 0.2s ease;
-}
-
-.footer-links a:hover {
-  color: var(--text-main);
-}
-
-
 /* ===== Home – Featured Projects Grid ===== */
 .featured-grid {
   max-width: 1100px;
