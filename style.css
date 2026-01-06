@@ -450,4 +450,11 @@ section {
 .contact-pill:hover {
   transform: translateY(-5px);
 }
+.skills-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
 
