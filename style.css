@@ -389,3 +389,27 @@ section {
     padding: 32px;
   }
 }
+
+/* ================= HORIZONTAL ROWS ================= */
+
+.skills-row,
+.contact-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  margin-top: 40px;
+  flex-wrap: nowrap;
+}
+
+/* skill cards tighter */
+.skill-card {
+  min-width: 90px;
+}
+
+/* contact cards stay pill-shaped */
+.contact-card {
+  min-width: 180px;
+  justify-content: center;
+}
+
