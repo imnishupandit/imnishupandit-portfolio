@@ -466,4 +466,22 @@ body {
     inset -6px -6px 14px #ffffff;
 }
 
+/* ================= HOME HERO FIX ================= */
+
+.hero-full {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* remove boxed feel */
+.hero-full .soft-wrapper {
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
 
