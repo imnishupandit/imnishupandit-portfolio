@@ -352,3 +352,33 @@ body {
   }
 }
 
+/* ================= SKILLS GRID ================= */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* reusable soft button */
+.soft-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 999px;
+  background: #f2f3f7;
+  color: var(--text-main);
+  text-decoration: none;
+  box-shadow:
+    10px 10px 25px #d1d3d8,
+   -10px -10px 25px #ffffff;
+  transition: all 0.25s ease;
+}
+
+.soft-btn:hover {
+  box-shadow:
+    inset 6px 6px 14px #d1d3d8,
+    inset -6px -6px 14px #ffffff;
+}
+
