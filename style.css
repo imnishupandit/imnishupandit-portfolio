@@ -390,26 +390,64 @@ section {
   }
 }
 
-/* ================= HORIZONTAL ROWS ================= */
+/* ================= HORIZONTAL SKILLS ================= */
 
-.skills-row,
+.skills-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  width: 140px;
+  height: 140px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.25s ease;
+}
+
+.skill-card img {
+  width: 44px;
+  height: 44px;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+
+
+/* ================= HORIZONTAL CONTACT ================= */
+
 .contact-row {
   display: flex;
   justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.contact-pill {
+  min-width: 220px;
+  padding: 20px 34px;
+  border-radius: 999px;
+  display: flex;
   align-items: center;
-  gap: 48px;
-  margin-top: 40px;
-  flex-wrap: nowrap;
+  gap: 14px;
+  transition: all 0.25s ease;
 }
 
-/* skill cards tighter */
-.skill-card {
-  min-width: 90px;
+.contact-pill img {
+  width: 36px;
+  height: 36px;
 }
 
-/* contact cards stay pill-shaped */
-.contact-card {
-  min-width: 180px;
-  justify-content: center;
+.contact-pill:hover {
+  transform: translateY(-5px);
 }
 
