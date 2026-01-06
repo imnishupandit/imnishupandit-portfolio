@@ -311,3 +311,43 @@ p {
 .project-text {
   max-width: 520px;
 }
+/* ===============================
+   SKILLS PAGE
+   =============================== */
+
+.skills-hero p {
+  max-width: 560px;
+  margin: 18px auto 0;
+  font-size: 1rem;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+/* Skill card */
+.skill-card {
+  padding: 20px;
+}
+
+.skill-card span {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.skill-card p {
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+/* Mobile tuning */
+@media (max-width: 600px) {
+  .skills-grid {
+    gap: 18px;
+  }
+}
