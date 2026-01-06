@@ -254,3 +254,53 @@ p {
     gap: 40px;
   }
 }
+/* ===============================
+   SCROLL REVEAL (SUBTLE)
+   =============================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 600px) {
+
+  .project-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .project-hero p {
+    font-size: 0.95rem;
+  }
+
+  .project-cinematic {
+    margin: 90px auto;
+    padding: 0 20px;
+  }
+
+  .project-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .project-lead {
+    font-size: 0.95rem;
+    margin-bottom: 22px;
+  }
+
+  .project-visual img {
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.55);
+  }
+
+  .project-text .btn {
+    margin-top: 20px;
+    width: fit-content;
+  }
+}
