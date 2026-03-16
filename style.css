@@ -493,8 +493,8 @@ p {
 }
 /* ===== FORCE FEATURED PROJECTS LAYOUT (HOME ONLY) ===== */
 .featured-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 28px;
   max-width: 1100px;
   margin: 40px auto 0;
