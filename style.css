@@ -505,7 +505,11 @@ p {
     grid-template-columns: 1fr;
   }
 }
-
+.project-visual img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 .project-visual img {
   width: 100%;
   border-radius: 18px;
