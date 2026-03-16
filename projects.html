@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <title>Projects | Nishu Pandit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <!-- ===============================
      PROJECTS INTRO
-     =============================== -->
+================================ -->
 <section class="container text-center project-hero">
   <h1>Projects</h1>
   <p>
@@ -21,15 +21,14 @@
 
 <!-- ===============================
      PROJECT 1
-     =============================== -->
-
+================================ -->
 <section class="project-cinematic reveal" id="ecommerce-project">
 
   <div class="project-text">
     <h2>Indian E-Commerce Sales Analysis & Forecasting</h2>
 
     <p class="project-lead">
-      An end-to-end analysis of Indian e-commerce sales data,
+      End-to-end analysis of Indian e-commerce sales data,
       uncovering trends, seasonal behavior, and future growth
       using time-series forecasting.
     </p>
@@ -51,14 +50,16 @@
   </div>
 
   <div class="project-visual">
-    <img src="./assets/dashboard.jpg" alt="E-Commerce Sales Dashboard">
+    <img src="assets/dashboard.jpg"
+         alt="E-Commerce Sales Dashboard"
+         loading="lazy">
   </div>
 
 </section>
 
 <!-- ===============================
      PROJECT 2
-     =============================== -->
+================================ -->
 <section class="project-cinematic reveal" id="hr-project">
 
   <div class="project-text">
@@ -87,34 +88,16 @@
   </div>
 
   <div class="project-visual">
-    <img src="./assets/hr-dashboard.jpg" alt="HR Analytics Dashboard">
+    <img src="assets/hr-dashboard.jpg"
+         alt="HR Analytics Dashboard"
+         loading="lazy">
   </div>
 
 </section>
-<script>
-  const reveals = document.querySelectorAll('.reveal');
-
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
-      });
-    },
-    {
-      threshold: 0.15
-    }
-  );
-
-  reveals.forEach(section => {
-    observer.observe(section);
-  });
-</script>
 
 <!-- ===============================
      PROJECT 3
-     =============================== -->
+================================ -->
 <section class="project-cinematic reveal" id="ecommerce-sql-project">
 
   <div class="project-text">
@@ -146,10 +129,28 @@
 
   <div class="project-visual">
     <img src="assets/ecommerce-dashboard.png"
-         alt="E-Commerce Analytics Dashboard">
+         alt="E-Commerce Analytics Dashboard"
+         loading="lazy">
   </div>
 
 </section>
-  
+
+<!-- ===============================
+     SCROLL REVEAL SCRIPT
+================================ -->
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    }
+  });
+}, { threshold: 0.15 });
+
+reveals.forEach(el => observer.observe(el));
+</script>
+
 </body>
 </html>
